@@ -1,6 +1,13 @@
 public class MyStudentList extends StudentList implements Aggregate {
+    public MyStudentList() {
+        super();
+    }
+
+    public MyStudentList(int studentCount) {
+        super(studentCount);
+    }
+
     public Iterator iterator() {
-        // TODO iterator 3で実施
-        return iterator();
+        return new MyStudentListIterator(this);
     }
 }
