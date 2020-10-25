@@ -1,3 +1,5 @@
+package iterator;
+
 public class MyStudentListIterator implements Iterator {
     private MyStudentList myStudentList;
     private int index;
